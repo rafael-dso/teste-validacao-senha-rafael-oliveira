@@ -5,7 +5,7 @@ Este projeto consiste em um validador de senhas robusto, desenvolvido para o des
 - Arquitetura e Design de Software
 Para atender aos requisitos de extensibilidade e baixo acoplamento, utilizei o Pattern Strategy
 
-- Principios SOLID aplicados:
+ Principios SOLID aplicados:
  - SRP (Single Responsibility Principle): Cada regra de validação (comprimento, caracteres especiais, repetição, etc.) possui sua própria classe dedicada.
  - OCP (Open/Closed Principle): O sistema está aberto para novas regras (basta criar uma nova classe que herda de PasswordRule) e fechado para modificação (não precisamos alterar o PasswordValidator para adicionar critérios).
  - DIP (Dependency Inversion Principle): O validador depende de uma interface abstrata (PasswordRule), e não de implementações concretas.
